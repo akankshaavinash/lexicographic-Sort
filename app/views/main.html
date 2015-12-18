@@ -1,0 +1,18 @@
+<div class="row mainContainer">
+  <div class="col-md-12">
+    <form novalidate class="simple-form">
+      <p>Enter comma(',') separated strings to create an array of strings:</p>
+      <input type="text" ng-model="arr.arrayString" /><br />
+      <p>Lexicographic order: </p>
+      <input type="text" ng-model="arr.lexicoOdr"/><br /><br />
+      <input type="submit" ng-click="getCorrectOrder(arr)" value="Submit" />
+    </form>
+  </div>
+  
+  <div class="col-md-12 output" ng-hide="isHidden">
+    <div class="col-md-12">
+        <div class="row"> Output : {{outputArr}}</div>
+    </div>
+ 
+  </div>
+</div>
