@@ -7,13 +7,21 @@ version 0.11.1.
 #Project structure
 
 Folder 'app' has whole project folders
+
 -images
+
 -scripts
+
 		-controllers
-				-main.js[Have the function for lexicographic sort.]
-		-app.js[Route creator file.]			
+
+				-main.js [Have the function for lexicographic sort.]
+
+		-app.js [Route creator file.]		
+
 -styles
+
 	main.css
+	
 	
 ## Build & development
 
