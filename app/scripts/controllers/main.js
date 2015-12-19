@@ -16,25 +16,14 @@ angular.module('lexicographicApp')
     ];
 
     $scope.isHidden = true;
-    // $scope.arrayString = "";
-        // $scope.inputArr =  ["bd", "dacb", "adbc", "bcda", "a", "ab", "c"]; 
-    // ["bd",  "ab",  "a" ,"dacb", "adbc", "bcda"]; cabd 
     $scope.lexicoOrder = '';
     $scope.outputArr = [];
   
-    // var arr = ["acb", "abc", "bca"]; //abc
-    // var arr =  ["bd", "dacb", "adbc", "bcda", "a", "ab", "c"]; // cba
-    // var arr = ["aaa","aa",""];
-     
-	// lexicographicSortFun(arr, 'a');
-
+    // function to call the lexicographic
 	$scope.getCorrectOrder = function(arr){
-		// console.log(arr);
 		$scope.arrStr = [];
     	$scope.arrStr = arr.arrayString.split(',');
-    	console.log($scope.arrStr, arr.lexicoOdr);
-    	$scope.arrayString = arr.arrayString.split(',');
-    	$scope.lexicoOrder = arr.lexicoOdr;
+    
 		lexicographicSortFun($scope.arrStr, arr.lexicoOdr);
 		$scope.isHidden = false;
 	}
@@ -65,7 +54,6 @@ angular.module('lexicographicApp')
 			}
 		}
 		$scope.outputArr = strArray;
-		// console.log(numArr,strArray);
 	}
 	function matchStr(str, strArr){
 		var strNum = "";
